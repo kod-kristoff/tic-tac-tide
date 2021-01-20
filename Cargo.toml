@@ -1,0 +1,14 @@
+[package]
+name = "tic-tac-tide"
+version = "0.1.0"
+authors = ["Kristoffer Andersson <6058164+kod-kristoff@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-std = { version = "1.9", features = ["attributes"]}
+env_logger = "0.8.2"
+futures-util = "0.3.12"
+tide = "0.15.0"
+tide-websockets = "0.1.0"
