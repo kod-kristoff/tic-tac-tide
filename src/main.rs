@@ -29,7 +29,7 @@ async fn main() -> Result<(), std::io::Error> {
         .get(|_| async { Ok(Body::from_file("./public/board.html").await?) });
     
     let port = std::env::var("PORT").unwrap_or_else(|_| "8080".to_string());
-    let addr = format!("0.0.0.0:{}", port);
+    let addr = format!("127.0.0.1:{}", port);
     println!("Starting server listening at {}", addr);
     app.listen(addr).await?;
 
